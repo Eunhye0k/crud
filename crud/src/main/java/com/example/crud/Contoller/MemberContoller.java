@@ -46,7 +46,6 @@ public class MemberContoller {
 	public String loginSuccess(@RequestParam HashMap<String, Object> map) throws Exception {
 		memberService.login(map);
 		Member member = new Member();
-		member.setmId((String) map.get("id"));
 		return "main";
 	}
 	

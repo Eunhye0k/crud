@@ -10,10 +10,10 @@
 	</insert>
 	
 	<select id="login" parameterType="hashMap"
-		resultType="com.example.demo.model.Member">
-		SELECT id 
+		resultType="Member">
+		SELECT m_id 
 		FROM member 
-		WHERE m_id = #{mId} AND m_passowrd = #{mPassword}
+		WHERE m_id = #{mId} AND m_password = #{mPassword}
 	</select>
 
 </mapper>
